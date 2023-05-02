@@ -1,0 +1,24 @@
+{
+  "name": "geekbrains-typescript-backend",
+  "version": "1.0.0",
+  "description": "House rent API",
+  "scripts": {
+    "build": "tsc",
+    "restore-data": "copy .\\data\\db.backup.json .\\data\\db.json",
+    "start": "npm run restore-data && SET TZ=UTC nodemon .\\dist\\index.js --watch",
+    "start-server": "nodemon .\\dist\\index.js"
+  },
+  "dependencies": {
+    "@feathersjs/express": "^4.5.11",
+    "@feathersjs/feathers": "^4.5.11",
+    "@feathersjs/transport-commons": "^4.5.11",
+    "geolib": "^3.3.3",
+    "joi": "^17.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.3.2"
+  }
+}
