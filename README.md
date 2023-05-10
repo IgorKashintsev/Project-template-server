@@ -5,7 +5,7 @@ Run server:
 ```bash
 npm ci
 npm run build
-npm start
+npm start-server
 ```
 
 Reset data to default:
